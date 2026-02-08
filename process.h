@@ -1,4 +1,6 @@
-
+// this helps with avoiding process.h being compiled multiple times
+#ifndef PROCESS_H
+#define PROCESS_H
 
 // enum is used to store const values.
 enum class ProcessState{
@@ -24,7 +26,9 @@ public:
     this->cpu_time_total = cpu_time_total;
     this->cpu_time_remaining = cpu_time_total;
     this->arrival_time = arrival_time;
-    this->finish_time = -1;
-    this->first_run_time = -1;
+    this->finish_time = finish_time;
+    this->first_run_time = -1; 
 }
 };
+
+#endif

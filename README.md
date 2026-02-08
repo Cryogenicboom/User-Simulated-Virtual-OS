@@ -8,3 +8,5 @@ FILE: process.h
 FILE : main.cpp
 
     --> to access and compare ProcessState, since its Enum class we have to use if / switch statements. 
+
+    --> 
